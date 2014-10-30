@@ -2,7 +2,7 @@ html {
 	font-size:100.01%;
 }
 body {
-  font-size: 75%;
+  font-size: 100%;
   color: #222;
   background: #fff;
   font-family: sans-serif;
@@ -10,7 +10,7 @@ body {
 
 /* HEADINGS */
 h1,h2,h3,h4,h5,h6 {
-	font-weight: normal; color: #111;
+	font-weight: bold; color: #111;
 }
 h1 {
 	font-size: 3em;
@@ -79,9 +79,15 @@ a{
 
 /* MISC TEXT ELEMENTS */
 blockquote{
+	font-size:2em;
 	margin: 1.5em;
-	color: #666;
 	font-style: italic;
+}
+blockquote:before{
+	content:"“"
+}
+blockquote:after{
+	content:"”"
 }
 strong,dfn{
 	font-weight: bold;
@@ -147,6 +153,7 @@ dd{
 	of other elements. 
  */ 
 table{
+	text-align:left;
 	margin-bottom: 1.4em;
 	width:100%;
 }
@@ -154,7 +161,9 @@ th{
 	font-weight: bold;
 }
 thead th{
-	background: #c3d9ff;
+	border-bottom:#DDD solid 1px;
+	text-transform:uppercase;
+	font-size:75%;
 }
 th,td,caption {
 	padding: 4px 10px 4px 5px;
@@ -163,8 +172,8 @@ th,td,caption {
 	You can zebra-stripe your tables in outdated browsers by adding 
 	the class "even" to every other table row. 
  */
-tbody tr:nth-child(even) td, tbody tr.even td  { 
-	background: #e5ecf9; 
+tbody tr:nth-child(odd) td, tbody tr.odd td  { 
+	background: #EEE; 
 }
 
 /* MISC TYPE CLASSES */

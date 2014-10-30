@@ -10,22 +10,24 @@
 	clear:both;
 }
 .kit-wrapper-flex{
-	max-width:98%
+	max-width:98%;
 }
 .kit-wrapper-max{
 	max-width:1200px;
 }
-.kit-column(){
+/* Columns */
+.kit-column{
+	width:98%;
 	margin:0 1%;
 	float:left;
 }
 .kit-column-xlarge{
-	width:98%;
-	.kit-column();
+	.kit-column;
+	width:64.66%;
 }
 .kit-column-large{
+	.kit-column;
 	width:48%;
-	.kit-column();
 }
 .kit-column-medium{
 	.kit-column;
@@ -37,14 +39,31 @@
 }
 .kit-column-xsmall{
 	.kit-column;
-	width:14.66%
+	width:14.66%;
 }
-@media (max-width: 800px) {
-	.kit-column-large, .kit-column-medium{
+/* Push Columns */
+.kit-push-large{
+	margin-left:51%;
+}
+.kit-push-medium{
+	margin-left:34.33%
+}
+.kit-push-small{
+	margin-left:26%;
+}
+.kit-push-xsmall{
+	margin-left:17.66%;
+}
+/* Column Media Queries */
+@media (max-width: 960px) {
+	.kit-column-xlarge,.kit-column-large, .kit-column-medium{
 		width:98%;
 	}
 	.kit-column-small, .kit-column-xsmall{
 		width:48%;
+	}
+	.kit-push-large,.kit-push-medium,.kit-push-small,.kit-push-xsmall{
+		margin-left:1%;
 	}
 }
 @media (max-width: 480px) {
@@ -53,7 +72,59 @@
 	}
 }
 
+/* SPACING */
+.kit-spacer(){
+	border:none;
+	width:100%;
+	padding:0;
+	margin:0;
+	background:transparent;
+}
+hr.kit-spacer-10{ .kit-spacer; height:10px; }
+hr.kit-spacer-20{ .kit-spacer; height:20px; }
+hr.kit-spacer-30{ .kit-spacer; height:30px; }
+hr.kit-spacer-40{ .kit-spacer; height:40px; }
+hr.kit-spacer-50{ .kit-spacer; height:50px; }
+hr.kit-spacer-60{ .kit-spacer; height:60px; }
+hr.kit-spacer-70{ .kit-spacer; height:70px; }
+hr.kit-spacer-80{ .kit-spacer; height:80px; }
+hr.kit-spacer-90{ .kit-spacer; height:90px; }
+hr.kit-spacer-100{ .kit-spacer; height:100px; }
+.kit-pad-10{ padding:10px; }
+.kit-pad-20{ padding:20px; }
+.kit-pad-30{ padding:30px; }
+.kit-pad-40{ padding:40px; }
+.kit-pad-50{ padding:50px; }
+.kit-pad-60{ padding:60px; }
+.kit-pad-70{ padding:70px; }
+.kit-pad-80{ padding:80px; }
+.kit-pad-90{ padding:90px; }
+.kit-pad-100{ padding:100px; }
+
 /* IMAGES */
 .kit-img-full{
 	width:100%;
+}
+.kit-media{
+	position:relative;
+}
+.kit-media-caption{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	background:rgba(0,0,0,.5);
+	color:#FFF;
+	padding:.5em;
+	margin:0;
+}
+
+/* FLOATS */
+.kit-left{
+	float:left;
+	margin:0 1em 1em 0;
+}
+.kit-right{
+	float:right;
+	margin:0 0 1em 1em;
 }
