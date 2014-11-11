@@ -70,10 +70,10 @@ p .right{
 
 /* LINKS */
 a:focus,a:hover{
-	color: #09f;
+	color: @link-active;
 }
 a{
-	color: #06c;
+	color: @link;
 	text-decoration: underline;
 }
 
@@ -110,7 +110,15 @@ del{
 }
 pre{
 	margin: 1.5em 0;
-	white-space: pre;
+	white-space:pre;
+	line-height:1em;
+	background:#EEE;
+	padding:1em;
+	border-radius:4px;
+	border-color:#DDD;
+	border-width:1px 0 0 1px;
+	border-style:solid;
+	color:#666;
 }
 pre,code,tt{
 	font: 1em 'andale mono', 'lucida console', monospace;
