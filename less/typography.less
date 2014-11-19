@@ -70,7 +70,7 @@ p .right{
 
 /* LINKS */
 a:focus,a:hover{
-	color: @link-active;
+	color: @link-hover;
 }
 a{
 	color: @link;
@@ -151,6 +151,49 @@ dl dt{
 }
 dd{
 	margin-left: 1.5em;
+}
+
+/* BUTTONS */
+.kit-button{
+	padding:.5em 1em;
+	background:@button-bg;
+	color:@button-text;
+	text-decoration:none;
+	line-height:2.5em;
+	border:@button-border solid 1px;
+}
+.kit-button:hover{
+	background:@button-bg-hover;
+	border-color:@button-bg;
+	color:#FFF;
+}
+.kit-button-prominent{
+	background:@button-prominent-bg;
+	border-color:@button-prominent-border;
+}
+.kit-button-prominent:hover{
+	background:@button-prominent-bg-hover;
+	border-color:@button-prominent-bg;
+}
+.kit-button-inactive{
+	background:@button-inactive-bg;
+	border-color:@button-inactive-border;
+	color:@button-inactive-text;
+	cursor:default;
+	pointer-events:none;
+}
+.kit-button-inactive:hover{
+	background:@button-inactive-bg;
+	border-color:@button-inactive-border;
+}
+.kit-button-small{
+	font-size:.75em;
+	line-height:3em;
+	padding:.5em .5em;
+}
+.kit-button-big{
+	font-size:1.25em;
+	padding:.75em 1em;
 }
 
 
