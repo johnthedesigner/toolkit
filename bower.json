@@ -1,0 +1,17 @@
+{
+  "name": "toolkit",
+  "version": "1.0.0",
+  "homepage": "https://github.com/johnthedesigner/toolkit",
+  "authors": [
+    "johnthedesigner <john@johnthedesigner.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

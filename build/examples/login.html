@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<!-- Styles -->
+    <link rel="stylesheet" href="/styles/style.css">
+    
+		<!-- Head Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    
+    <style>
+        body{
+        }
+        #article-feature{
+	        min-height:400px;
+	        background:#60d1f6;
+	        color:#FFF;
+        }
+        #article-feature hgroup{
+	        margin:240px 0;
+        }
+        #article-feature:after{
+	        content:"";
+	        display:block;
+	        clear:both;
+        }
+    </style>
+
+</head>
+<body>
+	
+        <style>
+	        body{
+		        background:#60d1f6;
+	        }
+	        form.kit-form{
+		        background:#FFF;
+	        }
+        </style>
+
+        <!-- Main Wrapper -->
+        <!-- 
+        Wrapper is the top level element in the toolkit.
+        All styles are selected through this element.
+        -->
+		<section class="kit-wrapper-flex">
+			
+			<div class="kit-column-medium kit-push-medium">
+				
+				<hr class="kit-spacer-100">
+				
+				<form class="kit-form kit-pad-30" id="sample-form" action="/" onsubmit="return false;">
+					
+					<h1 class="center">Login</h1>
+					
+					<hr class="kit-spacer-10">
+					
+					<fieldset>
+
+						<!-- Sample Text Field -->
+						<label for="sample-form-textarea">
+							<span>Username</span>
+							<strong><abbr title="required">*</abbr></strong>
+							<input type="text" name="text-field-required" id="sample-form-text-field-required" placeholder="Username" required autofocus>
+						</label>
+						
+						<!-- Sample Text Field -->
+						<label for="sample-form-textarea-required">
+							<span>Password</span>
+							<strong><abbr title="required">*</abbr></strong>
+							<input type="password" name="text-field-required" id="sample-form-text-field-required" placeholder="Password" required>
+						</label>
+						
+						<button class="kit-button kit-button-primary kit-button-arrow kit-button-block" type="submit">Log Me In!</button>
+							
+					</fieldset>
+					
+				</form>
+				
+				<p class="center">
+					<a href="#" class="kit-button kit-button-link">Create an account</a>
+					<a href="#" class="kit-button kit-button-link">Forgot your password?</a>
+				</p>
+				
+			</div>
+			
+        </section>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/scripts/main.js"></script>
+
+</body>
+</html>

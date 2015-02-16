@@ -1,0 +1,55 @@
+         <style>
+	        body{
+		        background:#60d1f6;
+	        }
+	        form.kit-form{
+		        background:#FFF;
+	        }
+        </style>
+
+       <!-- Main Wrapper -->
+        <!-- 
+        Wrapper is the top level element in the toolkit.
+        All styles are selected through this element.
+        -->
+		<section class="kit-wrapper-flex">
+			
+			<div class="kit-column-medium kit-push-medium">
+				
+				<hr class="kit-spacer-100">
+				
+				<form class="kit-form kit-pad-30" id="sample-form" action="/" onsubmit="return false;">
+					
+					<h1 class="center">Sign Up</h1>
+					
+					<hr class="kit-spacer-10">
+					
+					<fieldset>
+
+						<!-- Sample Text Field -->
+						<label for="sample-form-textarea">
+							<span>Choose a Username</span>
+							<strong><abbr title="required">*</abbr></strong>
+							<input type="text" name="text-field-required" id="sample-form-text-field-required" placeholder="Username" required autofocus>
+						</label>
+						
+						<!-- Sample Text Field -->
+						<label for="sample-form-textarea-required">
+							<span>Choose a Password</span>
+							<strong><abbr title="required">*</abbr></strong>
+							<input type="password" name="text-field-required" id="sample-form-text-field-required" placeholder="Password" required>
+						</label>
+						
+						<button class="kit-button kit-button-primary kit-button-arrow kit-button-block" type="submit">Sign Me Up!</button>
+							
+					</fieldset>
+					
+				</form>
+				
+				<p class="center">
+					<a href="#" class="kit-button kit-button-link">Already have an account?</a>
+				</p>
+				
+			</div>
+			
+        </section>

@@ -1,0 +1,408 @@
+/* Import Google Fonts */
+/* Old Fonts
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic|Droid+Serif:400,700,400italic,700italic);*/
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400italic,400,700,700italic|Lato:400,900,400italic,900italic);
+
+/* Main Styles */
+html {
+	font-size:100.01%;
+}
+body {
+  font-family: 'Merriweather',sans-serif;
+  font-size: 100%;
+  color: #222;
+  background: #fff;
+}
+
+/* HEADINGS */
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Lato', serif;
+	font-weight: bold;
+	position:relative;
+}
+h1 {
+	font-size: 3em;
+	line-height: 1;
+	margin-bottom: 0.5em;
+}
+h2 {
+	font-size: 2em;
+	margin-bottom: 0.75em;
+}
+h3 {
+	font-size: 1.5em;
+	line-height: 1;
+	margin-bottom: 1em;
+}
+h4 {
+	font-size: 1.2em;
+	line-height: 1.25;
+	margin-bottom: 1.25em;
+}
+h5 {
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: 1.5em;
+}
+h6 {
+	font-size: 1em;
+	font-weight: bold;
+}
+h1 img, h2 img, h3 img,
+h4 img, h5 img, h6 img {
+  margin: 0;
+}
+
+/* TEXT ELEMENTS */
+p{
+	margin: 0 0 1.5em;
+}
+
+/* FLOATS */
+.left{
+	float: left !important;
+}
+p .left{
+	margin: 1.5em 1.5em 1.5em 0;
+	padding: 0;
+}
+.right{
+	float: right !important;
+}
+p .right{
+	margin: 1.5em 0 1.5em 1.5em;
+	padding: 0;
+}
+
+/* LINKS */
+a:focus,a:hover{
+	color: @link-hover;
+}
+a{
+	color: @link;
+	text-decoration: underline;
+}
+
+/* MISC TEXT ELEMENTS */
+blockquote{
+	font-family: 'Lato', serif;
+	font-size:2em;
+	margin: 1.5em;
+	font-style: italic;
+}
+blockquote:before{
+	content:"“"
+}
+blockquote:after{
+	content:"”"
+}
+strong,dfn{
+	font-weight: bold;
+}
+em,dfn{
+	font-style: italic;
+}
+sup, sub{
+	line-height: 0;
+}
+abbr,acronym{
+	border-bottom: 1px dotted #666;
+}
+address{
+	margin: 0 0 1.5em;
+	font-style: italic;
+}
+del{
+	color:#666;
+}
+pre{
+	margin: 1.5em 0;
+	white-space:pre;
+	line-height:1em;
+	background:#EEE;
+	padding:1em;
+	border-radius:4px;
+	border-color:#DDD;
+	border-width:1px 0 0 1px;
+	border-style:solid;
+	color:#666;
+}
+pre,code,tt{
+	font: 1em 'andale mono', 'lucida console', monospace;
+	line-height: 1.5;
+}
+
+
+/* LISTS */
+
+li ul,li ol{
+	margin: 0;
+}
+ul, ol{
+	margin: 0 1.5em 1.5em 0;
+	padding-left: 1.5em;
+}
+
+ul{
+	list-style-type: disc;
+}
+ol{
+	list-style-type: decimal;
+}
+
+dl{
+	margin: 0 0 1.5em 0;
+}
+dl dt{
+	font-weight: bold;
+}
+dd{
+	margin-left: 1.5em;
+}
+
+/* BUTTONS */
+.kit-button{
+	font-family: 'Lato',sans-serif;
+	display:inline-block;
+	padding:0 1em;
+	margin:0 .25em;
+	background:@button-bg;
+	color:@button-text;
+	text-decoration:none;
+	line-height:2em;
+	border:@button-border solid 1px;
+	.button-radius( @button-radius, @button-radius, @button-radius, @button-radius );
+	transition:all linear .1s;
+}
+.kit-button:hover{
+	background:@button-bg-hover;
+	border-color:@button-border-hover;
+	color:@button-text;
+}
+.kit-button-primary{
+	background:@button-primary-bg;
+	border-color:@button-primary-border;
+	color:@button-primary-text;
+}
+.kit-button-primary:hover{
+	background:@button-primary-bg-hover;
+	border-color:@button-primary-bg;
+	color:@button-primary-text;
+}
+.kit-button-dark{
+	background:@button-dark-bg;
+	border-color:@button-dark-border;
+	color:@button-dark-text;
+}
+.kit-button-dark:hover{
+	background:@button-dark-bg-hover;
+	border-color:@button-dark-bg;
+	color:@button-dark-text;
+}
+.kit-button-success{
+	background:@button-success-bg;
+	border-color:@button-success-border;
+	color:@button-success-text;
+}
+.kit-button-success:hover{
+	background:@button-success-bg-hover;
+	border-color:@button-success-bg;
+	color:@button-success-text;
+}
+.kit-button-warning{
+	background:@button-warning-bg;
+	border-color:@button-warning-border;
+	color:@button-warning-text;
+}
+.kit-button-warning:hover{
+	background:@button-warning-bg-hover;
+	border-color:@button-warning-bg;
+	color:@button-warning-text;
+}
+.kit-button-danger{
+	background:@button-danger-bg;
+	border-color:@button-danger-border;
+	color:@button-danger-text;
+}
+.kit-button-danger:hover{
+	background:@button-danger-bg-hover;
+	border-color:@button-danger-bg;
+	color:@button-danger-text;
+}
+.kit-button-link{
+	background:@button-link-bg;
+	border-color:@button-link-border;
+	color:@button-link-text;
+}
+.kit-button-link:hover{
+	background:@button-link-bg-hover;
+	border-color:@button-link-bg;
+	color:@button-link-text-hover;
+}
+.kit-button-inactive{
+	background:@button-inactive-bg;
+	border-color:@button-inactive-border;
+	color:@button-inactive-text;
+	cursor:default;
+	pointer-events:none;
+}
+.kit-button-inactive:hover{
+	background:@button-inactive-bg;
+	border-color:@button-inactive-border;
+}
+/* BUTTON ICONS */
+.kit-button:after{
+	font-family:"FontAwesome";
+	margin-left:.75em;
+}
+.kit-button-send:after{
+	content:"\f1d8";
+}
+.kit-button-arrow:after{
+	content:"\f061";
+}
+.kit-button-reset:after{
+	content:"\f0e2";
+}
+.kit-button-add:after{
+	content:"\f067";
+}
+.kit-button-delete:after{
+	content:"\f00d";
+}
+.kit-button-save:after{
+	content:"\f0c7";
+}
+.kit-button-edit:after{
+	content:"\f044";
+}
+.kit-button-download:after{
+	content:"\f019";
+}
+.kit-button-loading:after{
+	content:"\f021";
+	-webkit-animation:fa-spin 2s infinite linear;
+	animation:fa-spin 2s infinite linear;
+}
+.kit-button-small{
+	font-size:.75em;
+	padding:0 .5em;
+}
+.kit-button-large{
+	font-size:1.5em;
+	padding:0 1em;
+}
+.kit-button-group:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.kit-button-group .kit-button{
+	.button-radius( 0, 0, 0, 0 );
+	margin:0;
+	float:left;
+}
+.kit-button-group .kit-button:first-child{
+	.button-radius( @button-radius, 0, 0, @button-radius );
+}
+.kit-button-group .kit-button:last-child{
+	.button-radius( 0, @button-radius, @button-radius, 0 );
+}
+.kit-button-block{
+	display:block;
+	margin:.5em 0;
+	text-align:center;
+}
+
+/* FORMS */
+form.kit-form{
+	position:relative;
+}
+form.kit-form fieldset{
+	border-width:1px;
+	border-style:solid;
+	border-color:#EEE;
+	margin:1em 0;
+}
+form.kit-form label{
+	display:block;
+	line-height:1.5;
+}
+form.kit-form label > span{
+	font-size:.75em;
+	line-height:2;
+}
+form.kit-form label > p{
+	margin:0;
+}
+form.kit-form input[type=text],form.kit-form input[type=email],form.kit-form input[type=password],form.kit-form input[type=url],form.kit-form input[type=number],form.kit-form input[type=search],form.kit-form input[type=tel]{
+	border-width:1px;
+	border-style:solid;
+	border-radius:4px;
+	border-color:#E5E5E5;
+	background:#EEE;
+	box-sizing:border-box;
+	width:100%;
+	padding:.5em;
+	margin-bottom:1em;
+}
+form.kit-form select{
+	display:block;
+	border-width:1px;
+	border-style:solid;
+	border-radius:4px;
+	border-color:#E5E5E5;
+	background:#EEE;
+	box-sizing:border-box;
+	width:100%;
+}
+form.kit-form textarea{
+	display:block;
+	border-width:1px;
+	border-style:solid;
+	border-color:#E5E5E5;
+	border-color:#DDD;
+	background:#EEE;
+	box-sizing:border-box;
+	width:100%;
+	padding:.5em;
+}
+form.kit-form button .fa{
+	margin-left:.5em;
+}
+
+/* TABLES */
+/* 
+	Because of the need for padding on TH and TD, the vertical rhythm 
+	on table cells has to be 27px, instead of the standard 18px or 36px 
+	of other elements. 
+ */ 
+table{
+	text-align:left;
+	margin-bottom: 1.4em;
+	width:100%;
+}
+th{
+	font-weight: bold;
+}
+thead th{
+	border-bottom:#DDD solid 1px;
+	text-transform:uppercase;
+	font-size:75%;
+}
+th,td,caption {
+	padding: 4px 10px 4px 5px;
+}
+/*
+	You can zebra-stripe your tables in outdated browsers by adding 
+	the class "even" to every other table row. 
+ */
+tbody tr:nth-child(odd) td, tbody tr.odd td  { 
+	background: #EEE; 
+}
+
+/* MISC TYPE CLASSES */
+.center{
+	text-align:center;
+}
+
