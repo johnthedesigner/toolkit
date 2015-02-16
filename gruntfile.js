@@ -28,19 +28,19 @@ module.exports = function(grunt) {
                     optimization: 2
                 },
                 files: {
-                    "./build/styles/toolkit-v1.0.css": "./src/styles/less/style.less"
+                    "./build/styles/toolkit.min.css": "./src/styles/less/style.less"
                 }
             }
         },
         concat: {
             dist: {
                 src: ['./src/js/**/*.js'],
-                dest: './build/scripts/toolkit-v1.0.js'
+                dest: './build/scripts/toolkit.min.js'
             }
         },
         jshint: {
             beforeconcat: ['./src/js/**/*.js'],
-            afterconcat: ['./build/scripts/toolkit-v1.0.js']
+            afterconcat: ['./build/scripts/toolkit.min.js']
         },
         watch: {
             scripts: {

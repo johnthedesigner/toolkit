@@ -6,7 +6,11 @@
     "johnthedesigner <john@johnthedesigner.com>"
   ],
   "license": "MIT",
-  "private": true,
+  "private": false,
+  "main": [
+	".build/scripts/toolkit.css",
+	".build/styles/toolkit.js"
+  ],
   "ignore": [
     "**/.*",
     "node_modules",
