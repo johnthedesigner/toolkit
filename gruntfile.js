@@ -14,7 +14,7 @@ module.exports = function(grunt) {
             site: {
                 files: [{
                     cwd: './src/views/',
-                    dest: './build/',
+                    dest: './dist/',
                     expand: true,
                     src: '**/*.hbs'
                 }]
@@ -28,19 +28,19 @@ module.exports = function(grunt) {
                     optimization: 2
                 },
                 files: {
-                    "./build/styles/toolkit.min.css": "./src/styles/less/style.less"
+                    "./dist/styles/toolkit.min.css": "./src/styles/less/style.less"
                 }
             }
         },
         concat: {
             dist: {
                 src: ['./src/js/**/*.js'],
-                dest: './build/scripts/toolkit.min.js'
+                dest: './dist/scripts/toolkit.min.js'
             }
         },
         jshint: {
             beforeconcat: ['./src/js/**/*.js'],
-            afterconcat: ['./build/scripts/toolkit.min.js']
+            afterconcat: ['./dist/scripts/toolkit.min.js']
         },
         watch: {
             scripts: {
@@ -55,20 +55,10 @@ module.exports = function(grunt) {
 	        options: {
 	            port: 9000,
 			    'serve': {
-			        'path': 'build/'
+			        'path': 'dist/'
 			    }
 	        }
-	    },
-		connect: {
-			server: {
-				options: {
-					port: 8001,
-					hostname: 'localhost',
-					base: '.'
-				}
-			},
-			keepalive: true
-		}
+	    }
     });
 
     // Load handlebars template compiler
